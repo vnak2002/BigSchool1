@@ -16,6 +16,7 @@ namespace BigSchool1.Controllers
         {
             _dbContext= new ApplicationDbContext();
         }
+        [Authorize] 
         public ActionResult Create()
         {
             var viewModel = new CourseViewModel
@@ -24,5 +25,6 @@ namespace BigSchool1.Controllers
             };
             return View(viewModel);
         }
+        
     }
 }
