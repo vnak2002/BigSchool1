@@ -22,7 +22,7 @@
         @Html.LabelFor(m => m.Category)
         @Html.DropDownListFor(m => m.Category, new SelectList(Model.Categories, "Id", "Name"), "", new { @class = "form-control"})
     </div>
-    <div class="form-group"></div>
+    
     <button type="submit" value="Save" class="btn btn-primary">Save</button>
 </form>
 
